@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Update Animal</title>
+    <link rel="stylesheet" href="css/add_animal.css">
+    <script src="js/adoption.js"></script>
+</head>
+
+<body onload="loadAnimalFullForUpdate()">
+
+    <!--header-->
+    <header class="navbar">
+    <div class="logo-wrap">
+        <img src="images/paw.png" alt="Paw" class="paw-icon">
+        <h1 class="logo">Home4Paws</h1>
+    </div>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="adoption.html">All Animals</a>
+        <a href="add_animal.html">Add an Animal</a>
+        <a href="about.html">About Us</a>
+        <a href="user.html">Log Out</a>
+    </nav>
+</header>
+
+    <!--main part of the page-->
+    <div class="container">
+        <div class="form-card">
+            <h2 class="update-title">Update Animal</h2>
+            <form id="updateAnimalForm" method="post" onsubmit="updateAnimalFullData(); return false">
+                <h3>Animal Table</h3>
+                <input type="hidden" id="animal_id_tb" name="animal_id">
+
+                <label for="name_tb">Name</label>
+                <input type="text" id="name_tb" name="name" required>
+
+                <label for="breed_tb">Breed</label>
+                <input type="text" id="breed_tb" name="breed" required>
+
+                <label for="age_tb">Age</label>
+                <input type="number" id="age_tb" name="age" required>
+
+                <label for="gender_tb">Gender</label>
+                <select id="gender_tb" name="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+
+                <label for="status_tb">Status</label>
+                <select id="status_tb" name="status">
+                    <option value="Available">Available</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Adopted">Adopted</option>
+                </select>
+
+                <label for="description_tb">Description</label>
+                <input type="text" id="description_tb" name="description">
+                <hr>
+
+                <h3>Species Table</h3>
+
+                <input type="hidden" id="species_id_tb" name="species_id">
+
+                <label for="species_tb">Species</label>
+                <input type="text" id="species_tb" name="species">
+                <hr>
+
+                <h3>Medical Table</h3>
+
+                <input type="hidden" id="medical_id_tb" name="medical_id">
+
+                <label for="vaccination_tb">Vaccination Status</label>
+                <select id="vaccination_tb" name="vaccination_status">
+                    <option value="1">Vaccinated</option>
+                    <option value="0">Not Vaccinated</option>
+                </select>
+
+                <label for="sterilised_tb">Sterilised</label>
+                <select id="sterilised_tb" name="sterilised">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+
+                <label for="medical_notes_tb">Medical Notes / History</label>
+                <input type="text" id="medical_notes_tb" name="medical_notes">
+                <hr>
+                <h3>Image Table</h3>
+
+                <input type="hidden" id="image_id_tb" name="image_id">
+
+                <label for="image_url_tb">Image URL</label>
+                <input type="text" id="image_url_tb" name="image_url">
+
+                <!--buttons-->
+                <div class="btn-row">
+                    <button type="submit">Update Animal</button>
+                    <button type="button" class="secondary" onclick="location.href='adoption.html'">Back</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

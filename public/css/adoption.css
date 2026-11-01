@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f4f6;      
+  color: #1f2933;
+}
+
+/*the header*/
+.navbar {
+  background: #3a3a3a;      
+  color: white;
+  padding: 18px 20px;
+  text-align: center;
+}
+
+/*the titlee*/
+.logo {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.navbar nav {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.12);
+  transition: 0.2s;
+}
+
+.navbar nav a:hover {
+  background: rgba(255,255,255,0.22);
+}
+
+/*page layout*/
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 26px 18px;
+}
+
+/*the animal cards*/
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 18px;
+}
+
+tr {
+  vertical-align: top;
+}
+
+td {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+}
+
+/*for the animal name*/
+td h4 {
+  margin: 6px 0 12px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #1f2933;
+}
+
+td img {
+  width: 180px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  margin: 0 auto 12px auto;
+}
+
+/*the info text*/
+td p {
+  margin: 6px 0;
+  color: #4b5563;
+  line-height: 1.4;
+}
+
+/*the buttons*/
+button {
+  padding: 9px 12px;
+  margin: 8px 4px 0 4px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  background: #4f6d8c;      
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  background: #3f5b77;
+}
+
+/*for the delete button*/
+button.delete {
+  background: #b23b3b;
+}
+
+button.delete:hover {
+  background: #962f2f;
+}
+
+/*Animals details page stuff below*/
+.details-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+}
+
+.details-card h2 {
+  margin-top: 0;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.details-image {
+  width: 260px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  margin: 12px auto 18px auto;
+}
+
+.details-info p {
+  margin: 6px 0;
+  color: #374151;
+}
+
+.details-card h3 {
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#imageGallery img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 6px;
+}
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin: 18px 0 22px;
+  flex-wrap: wrap;
+}
+
+.search-bar input,
+.search-bar select {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d7deea;
+  background: #fff;
+}
+
+.search-bar .secondary {
+  background: #e9edf5;
+  color: #1f2d3d;
+}
+.search-bar .secondary:hover {
+  background: #dce3ef;
+}
+/*the hero functino on the home page*/
+.home-hero {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+  margin-top: 18px;
+}
+
+.home-hero-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+/*the dark overlay*/
+.home-hero-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-hero-btn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  background: rgba(0,0,0,0.65);
+  color: white;
+}
+
+.home-hero-btn:hover {
+  background: rgba(0,0,0,0.78);
+  transform: translateY(-1px);
+}
+
+.home-content {
+  margin-top: 26px;
+  background: white;
+  border-radius: 16px;
+  padding: 18px 18px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+}
+
+.home-content h2 {
+  margin: 0 0 10px;
+}
+
+.home-content p {
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+}
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.paw-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+/*for the info section*/
+.info-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 18px;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.info-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.info-text {
+    flex: 1;
+}
+
+.info-text h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 800;
+    color: #1f2d3d;
+}
+
+.info-text p {
+    line-height: 1.6;
+    color: #444;
+}
+
+.info-image {
+    flex: 1;
+    text-align: center;
+}
+
+.info-image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display All Animals</title>
+    <link rel="stylesheet" href="css/adoption.css">
+    <script src="js/adoption.js"></script>
+
+</head>
+<body onload="loadAnimalData()">
+
+    <header class="navbar">
+    <div class="logo-wrap">
+        <img src="images/paw.png" alt="Paw" class="paw-icon">
+        <h1 class="logo">Home4Paws</h1>
+    </div>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="adoption.html">All Animals</a>
+        <a href="add_animal.html">Add an Animal</a>
+        <a href="about.html">About Us</a>
+        <a href="user.html">Log Out</a>
+    </nav>
+</header>
+
+    <div class="container">
+
+        <!--search bar and filter(my extra feature)-->
+        <div class="search-bar">
+            <input id="searchName" type="text" placeholder="Search name...">
+
+            <select id="searchStatus">
+                <option value="">All Status</option>
+                <option value="Available">Available</option>
+                <option value="Pending">Pending</option>
+                <option value="Adopted">Adopted</option>
+            </select>
+
+            <input id="searchSpecies" type="text" placeholder="Species (Dog/Cat)...">
+
+            <button type="button" onclick="searchAnimals()">Search</button>
+            <button type="button" class="secondary" onclick="loadAnimalData()">Reset</button>
+        </div>
+        <div id="dynamicAnimalDataList"></div>
+    </div>
+</body>
+</html>

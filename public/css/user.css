@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #1f2d3d;
+}
+
+/*the header*/
+.login-header {
+    background: #3f3f3f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.login-header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+/*to make it centered*/
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+/*for the login card*/
+.login-card {
+    background: white;
+    width: 100%;
+    max-width: 480px;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+}
+
+.login-card h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.subtitle {
+    margin-top: 4px;
+    margin-bottom: 20px;
+    color: #5f6c80;
+    font-size: 14px;
+}
+
+/*for the form like the loging stuff*/
+label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #d0d7e2;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #7b8ba8;
+}
+
+/*for the buttons*/
+.btn-row {
+    margin-top: 22px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 15px;
+}
+button.primary {
+    background: #2c7be5;
+    color: white;
+}
+
+button.primary:hover {
+    background: #1f63c3;
+}
+
+
+

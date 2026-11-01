@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="css/user.css">
+
+</head>
+<body>
+    <header class="login-header">
+        <h1>Home4Paws</h1>
+    </header>
+
+    <div class="login-container">
+        <div class="login-card">
+
+            <h2>Admin Login</h2>
+            <p class="subtitle">Please log in to manage animal records</p>
+            <!--after the user clicks login it will bring them to the home page-->
+            <form id="loginForm" onsubmit="location.href='home.html'; return false;">
+
+                <label>Email</label>
+                <input type="text" name="email" required>
+
+                <label>Username</label>
+                <input type="text" name="username" required>
+
+                <label>Password</label>
+                <input type="password" name="password" required>
+
+                <div class="btn-row">
+                    <button type="submit" class="primary">Login</button>
+                </div>
+            </form>
+            <p id="loginMessage"></p>
+        </div>
+    </div>
+</body>
+</html>

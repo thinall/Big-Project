@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animal Details</title>
+    <link rel="stylesheet" href="css/adoption.css">
+    <script src="./js/adoption.js"></script>
+
+</head>
+<body onload="loadAnimalDetail()">
+    <!--the heading-->
+    <header class="navbar">
+    <div class="logo-wrap">
+        <img src="images/paw.png" alt="Paw" class="paw-icon">
+        <h1 class="logo">Home4Paws</h1>
+    </div>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="adoption.html">All Animals</a>
+        <a href="add_animal.html">Add an Animal</a>
+        <a href="about.html">About Us</a>
+        <a href="user.html">Log Out</a>
+    </nav>
+</header>
+    <!--main part of thepage-->
+    <div class="container">
+
+        <div class="details-card">
+
+            <!--the animals info part-->
+            <h2 id="animalName">Animal Name</h2>
+
+            <img id="mainImage" src="images/ugi.jpg" alt="Animal Image" class="details-image">
+
+            <div class="details-info">
+                <p><strong>Breed:</strong> <span id="breed"></span></p>
+                <p><strong>Age:</strong> <span id="age"></span></p>
+                <p><strong>Gender:</strong> <span id="gender"></span></p>
+                <p><strong>Status:</strong> <span id="status"></span></p>
+            </div>
+            <hr>
+
+            <h3>Description</h3>
+            <p id="description"></p>
+
+            <hr>
+            <h3>Species</h3>
+            <div id="speciesList">No species information.</div>
+            <hr>
+
+            <h3>Medical</h3>
+            <div id="medicalInfo">No medical information.</div>
+            <hr>
+
+            <h3>More Images</h3>
+            <div id="imageGallery">No images found.</div>
+
+            <!--buttons at the bottom of thepage-->
+            <div class="btn-row">
+                <button type="button" onclick="editThisAnimal()">Edit</button>
+                <button type="button" class="delete" onclick="deleteThisAnimal()">Delete</button>
+                <button type="button" class="secondary" onclick="goBack()">Back</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
